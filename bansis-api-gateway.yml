@@ -4,3 +4,14 @@ eureka:
     client:
         serviceUrl:
             defaultZone: http://localhost:8082/eureka/
+spring:
+    cloud:
+        gateway:
+            discovery:
+                locator:
+                    enabled: true
+            routes:
+                - id: bansis-client
+                  uri: lb://bansis-client
+                  predicates:
+                    - Path=/clients/**

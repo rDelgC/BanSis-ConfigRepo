@@ -15,3 +15,7 @@ spring:
                   uri: lb://bansis-client
                   predicates:
                     - Path=/clients/**
+                - id: bansis-current-account
+                  uri: lb://bansis-current-account
+                  predicates:
+                    - Path=/cu-accounts/**

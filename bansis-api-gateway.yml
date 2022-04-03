@@ -19,3 +19,7 @@ spring:
                   uri: lb://bansis-current-account
                   predicates:
                     - Path=/cu-accounts/**
+                - id: bansis-savings-fixed-account
+                  uri: lb://bansis-savings-fixed-account
+                  predicates:
+                    - Path=/accounts/**

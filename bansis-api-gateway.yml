@@ -23,3 +23,7 @@ spring:
                   uri: lb://bansis-savings-fixed-account
                   predicates:
                     - Path=/accounts/**
+                - id: bansis-yanki-wallet
+                  uri: lb://bansis-yanki-wallet
+                  predicates:
+                    - Path=/yanki/**

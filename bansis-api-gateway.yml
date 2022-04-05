@@ -27,3 +27,7 @@ spring:
                   uri: lb://bansis-yanki-wallet
                   predicates:
                     - Path=/yanki/**
+                - id: bansis-bootcoin
+                  uri: lb://bansis-bootcoin
+                  predicates:
+                    - Path=/bootcoin/**
